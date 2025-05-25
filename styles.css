@@ -1,0 +1,663 @@
+/* Global Styles */
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #fc5c65;
+    --accent-color: #2bcbba;
+    --dark-color: #2d3436;
+    --light-color: #f5f6fa;
+    --card-bg: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --male-color: #6c5ce7;
+    --female-color: #fc5c65;
+    --other-color: #2bcbba;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Card Styles */
+.stat-card, .demo-card, .geo-card, .video-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover, .demo-card:hover, .geo-card:hover, .video-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.social-platform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-platform i {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    transition: transform 0.3s ease;
+}
+
+.social-platform:hover i {
+    transform: scale(1.1);
+}
+
+.social-platform .follower-count {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.tiktok i {
+    color: #000;
+}
+
+.youtube i {
+    color: #FF0000;
+}
+
+.total-followers {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.total-followers span {
+    font-size: 0.9rem;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.total-followers h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+}
+
+/* Stats Overview */
+.stats-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-card h3 {
+    font-size: 0.9rem;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+/* Video Stats */
+.video-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.wide {
+    grid-column: span 1;
+}
+
+/* Demographics */
+.demographics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.demo-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.chart-container {
+    height: 200px;
+    position: relative;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.chart-legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.color-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.male {
+    background-color: var(--male-color);
+}
+
+.female {
+    background-color: var(--female-color);
+}
+
+.other {
+    background-color: var(--other-color);
+}
+
+/* Age Groups */
+.age-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.age-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.age-label {
+    width: 60px;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.age-bar {
+    flex-grow: 1;
+    height: 25px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    width: calc(100% - 70px);
+}
+
+.age-value {
+    height: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Geography */
+.geography {
+    margin-bottom: 2rem;
+}
+
+.geo-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.geo-card:hover {
+    transform: translateY(-5px);
+}
+
+.full-width {
+    width: 100%;
+}
+
+.geo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.geo-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flag-container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.country-name {
+    flex-grow: 1;
+    font-size: 0.9rem;
+}
+
+.country-value {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Content Showcase */
+.content-showcase {
+    margin-bottom: 2rem;
+}
+
+.content-showcase h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.video-card {
+    padding-bottom: 1rem;
+}
+
+.video-placeholder {
+    height: 300px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.video-placeholder:hover {
+    background-color: #e0e0e0;
+}
+
+.video-placeholder i {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.video-caption {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Rates Section */
+.rates-section {
+    margin-bottom: 2rem;
+}
+
+.rates-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.rates-list {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.rate-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+.rate-item:last-child {
+    border-bottom: none;
+}
+
+.rate-item:hover {
+    background-color: #f9f9ff;
+}
+
+.rate-info h3 {
+    color: var(--dark-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.rate-info .duration {
+    color: #777;
+    font-size: 0.85rem;
+}
+
+.rate-item .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+}
+
+.contact-info h3 {
+    margin-bottom: 0.8rem;
+    color: #777;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-links a {
+    color: var(--dark-color);
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+.follower-count {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .stats-overview, .video-stats, .demographics, .geography {
+        grid-template-columns: 1fr;
+    }
+    
+    .demographics {
+        width: 100%;
+    }
+    
+    .demo-card {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .chart-container {
+        height: 180px;
+    }
+    
+    .wide {
+        grid-column: span 1;
+    }
+    
+    #profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-container {
+        gap: 1rem;
+    }
+    
+    .social-platform i {
+        font-size: 1.5rem;
+    }
+    
+    .rate-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    
+    .rate-item .price {
+        margin-top: 0.5rem;
+        align-self: flex-start;
+    }
+    
+    .chart-legend {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .stat-card h2 {
+        font-size: 1.6rem;
+    }
+    
+    .stat-card h3 {
+        font-size: 0.8rem;
+    }
+    
+    h1#creator-name {
+        font-size: 1.8rem;
+    }
+    
+    .total-followers h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Small phone screens */
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .container {
+        padding: 0.8rem;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    #profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .stat-card {
+        padding: 1rem;
+    }
+    
+    .stat-card h2 {
+        font-size: 1.4rem;
+    }
+    
+    .stat-card h3 {
+        font-size: 0.7rem;
+    }
+    
+    .social-platforms {
+        gap: 1.5rem;
+    }
+    
+    .demo-card, .geo-card {
+        padding: 1rem;
+    }
+    
+    .age-bar {
+        width: calc(100% - 60px);
+    }
+    
+    .age-label {
+        width: 50px;
+        font-size: 0.8rem;
+    }
+    
+    .age-value {
+        font-size: 0.8rem;
+        padding-right: 5px;
+    }
+    
+    .chart-container {
+        height: 160px;
+    }
+    
+    .chart-legend {
+        gap: 0.7rem;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-size: 0.85rem;
+    }
+    
+    .legend-item {
+        gap: 0.3rem;
+    }
+    
+    .color-dot {
+        width: 10px;
+        height: 10px;
+    }
+    
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+        position: relative;
+    }
+}
+
+@media (max-width: 350px) {
+    .chart-legend {
+        font-size: 0.75rem;
+    }
+    
+    .container {
+        padding: 0.5rem;
+    }
+    
+    .stat-card h3 {
+        font-size: 0.65rem;
+    }
+}
+
+/* For the age graph bars - setting widths based on percentage */
+#age-13-17 { width: 4.3%; }
+#age-18-24 { width: 38.1%; }
+#age-25-34 { width: 27.4%; }
+#age-35-44 { width: 21.1%; }
+#age-45-54 { width: 6.9%; }
+#age-55\+ { width: 6.5%; }
+
+.social-platforms {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.bundle-note {
+    text-align: center;
+    margin-top: 1rem;
+    font-style: italic;
+    color: #555;
+    font-size: 0.9rem;
+} 
