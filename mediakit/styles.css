@@ -163,6 +163,14 @@ header {
     color: var(--dark-color);
 }
 
+.stat-card .duration {
+    color: #777;
+    font-size: 0.85rem;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
 /* Video Stats */
 .video-stats {
     display: grid;
@@ -272,6 +280,17 @@ header {
     color: white;
     font-size: 0.9rem;
     font-weight: bold;
+    position: relative;
+}
+
+/* Move small percentage values to the right */
+#age-55\+ {
+    position: relative;
+}
+
+#age-55\+ {
+    justify-content: flex-start;
+    padding-left: 10px;
 }
 
 /* Geography */

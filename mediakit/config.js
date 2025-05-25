@@ -8,12 +8,12 @@ const mediaKitConfig = {
     profile: {
         name: "Seri",
         username: "@seriixo",
-        bio: "Your compelling bio goes here - describe your content style and niche",
+        bio: "I love creating content that truly connects and builds a loyal, engaged community. With a mix of creativity, silly videos, and dedication, I will do ANYTHING to make every post go viral—including our collabs! I'd be so excited to get to know your beautiful brand and showcase it in a way my audience will genuinely love.",
         profileImage: "profile.jpg", // Place your profile image in the same directory
         email: "seriixo.mgmt@gmail.com",
         socialLinks: {
             tiktok: "https://www.tiktok.com/@seriixo",
-            youtube: "https://www.youtube.com/@seriixo"
+            youtube: "https://www.youtube.com/@seriixo/shorts"
         },
         socialFollowers: {
             tiktok: "51.6k",
