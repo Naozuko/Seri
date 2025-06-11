@@ -123,5 +123,5 @@ const mediaKitConfig = {
     ],
 
     // Bundle pricing note
-    bundleNote: "Contact for bundle price"
+    bundleNote: "Contact for bundle price. Payments will be made in AUD."
 }; 
