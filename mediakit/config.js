@@ -93,27 +93,27 @@ const mediaKitConfig = {
         {
             title: "Cross-platform Posting",
             description: "(TikTok + YouTube)",
-            price: "$1945 USD"
+            price: "$2650 USD"
         },
         {
             title: "TikTok Dedicated",
             description: "(30s-120s)",
-            price: "$1295 USD"
+            price: "$1945 USD"
         },
         {
             title: "TikTok Integrated",
             description: "(15s-30s)",
-            price: "$850 USD"
+            price: "$1050 USD"
+        },        
+        {
+            title: "Link in Bio",
+            description: "(7-days)",
+            price: "$520 USD"
         },
         {
             title: "Usage Rights",
             description: "(1 Month)",
-            price: "$355 USD"
-        },
-        {
-            title: "Link in Bio",
-            description: "(7-days)",
-            price: "$325 USD"
+            price: "$455 USD"
         },
         {
             title: "Scripted/Dedicated",
