@@ -122,6 +122,33 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
             countriesList.appendChild(countryItem);
         });
+
+        // Load rates data
+        const ratesList = document.querySelector('.rates-list');
+        const bundleNote = document.querySelector('.bundle-note');
+        
+        if (ratesList && mediaKitConfig.rates) {
+            ratesList.innerHTML = ''; // Clear existing items
+            
+            mediaKitConfig.rates.forEach(rate => {
+                const rateItem = document.createElement('div');
+                rateItem.className = 'rate-item';
+                rateItem.innerHTML = `
+                    <div class="rate-info">
+                        <h3>${rate.title}</h3>
+                        ${rate.description ? `<p class="duration">${rate.description}</p>` : ''}
+                    </div>
+                    <div class="price">
+                        <span class="usd">${rate.price}</span>
+                    </div>
+                `;
+                ratesList.appendChild(rateItem);
+            });
+        }
+        
+        if (bundleNote && mediaKitConfig.bundleNote) {
+            bundleNote.textContent = mediaKitConfig.bundleNote;
+        }
     }
 
     // Editable content functionality

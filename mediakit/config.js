@@ -16,8 +16,8 @@ const mediaKitConfig = {
             youtube: "https://www.youtube.com/@seriixo/shorts"
         },
         socialFollowers: {
-            tiktok: "51.6k",
-            youtube: "81.2k"
+            tiktok: "60.8k",
+            youtube: "111k"
         }
     },
 
@@ -86,5 +86,42 @@ const mediaKitConfig = {
             thumbnail: "",
             link: "https://tiktok.com/@yourtiktokhandle/video/123456789"
         }
-    ]
+    ],
+
+    // Collaboration Rates
+    rates: [
+        {
+            title: "Cross-platform Posting",
+            description: "(TikTok + YouTube)",
+            price: "$1945 USD"
+        },
+        {
+            title: "TikTok Dedicated",
+            description: "(30s-120s)",
+            price: "$1295 USD"
+        },
+        {
+            title: "TikTok Integrated",
+            description: "(15s-30s)",
+            price: "$850 USD"
+        },
+        {
+            title: "Usage Rights",
+            description: "(1 Month)",
+            price: "$355 USD"
+        },
+        {
+            title: "Link in Bio",
+            description: "(7-days)",
+            price: "$325 USD"
+        },
+        {
+            title: "Scripted/Dedicated",
+            description: "",
+            price: "$650 USD"
+        }
+    ],
+
+    // Bundle pricing note
+    bundleNote: "Contact for bundle price"
 }; 
