@@ -23,7 +23,7 @@ const mediaKitConfig = {
 
     // Main Statistics
     statistics: {
-        followers: tiktokStats.followers,
+        followers: "60.8k",
         engagement: tiktokStats.engagementRate,
         totalPosts: tiktokStats.totalVideos,
         avgLikes: tiktokStats.avgLikes28d,
