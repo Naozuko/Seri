@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const totalFollowersElement = document.querySelector('.total-followers h2');
         if (totalFollowersElement) {
             // Calculate total from TikTok + YouTube
-            totalFollowersElement.textContent = '232.3k';
+            totalFollowersElement.textContent = '287.9k';
         }
         
         // Load statistics
