@@ -89,7 +89,34 @@ document.addEventListener('DOMContentLoaded', function() {
         const totalFollowersElement = document.querySelector('.total-followers h2');
         if (totalFollowersElement) {
             // Calculate total from TikTok + YouTube
-            totalFollowersElement.textContent = '287.9k';
+            const parseAbbrev = (value) => {
+                if (!value) return 0;
+                const s = String(value).toLowerCase().replace(/,/g, '').trim();
+                const match = s.match(/^([0-9]+(?:\.[0-9]+)?)\s*([km]?)$/);
+                if (!match) return 0;
+                const num = parseFloat(match[1]);
+                const unit = match[2];
+                if (unit === 'm') return Math.round(num * 1_000_000);
+                if (unit === 'k') return Math.round(num * 1_000);
+                return Math.round(num);
+            };
+
+            const formatAbbrev = (n) => {
+                if (n >= 1_000_000) {
+                    const v = n / 1_000_000;
+                    return (Number.isInteger(v) ? v.toFixed(0) : v.toFixed(1)) + 'M';
+                }
+                if (n >= 1_000) {
+                    const v = n / 1_000;
+                    return (Number.isInteger(v) ? v.toFixed(0) : v.toFixed(1)) + 'k';
+                }
+                return String(n);
+            };
+
+            const tiktokTotal = parseAbbrev(mediaKitConfig.profile.socialFollowers.tiktok);
+            const youtubeTotal = parseAbbrev(mediaKitConfig.profile.socialFollowers.youtube);
+            const total = tiktokTotal + youtubeTotal;
+            totalFollowersElement.textContent = formatAbbrev(total);
         }
         
         // Load statistics
