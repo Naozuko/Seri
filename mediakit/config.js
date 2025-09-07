@@ -8,7 +8,7 @@ const mediaKitConfig = {
     profile: {
         name: "Seri",
         username: "@seriixo",
-        bio: "I love creating content that truly connects and builds a loyal, engaged community. With a mix of creativity, silly videos, and dedication, I will do ANYTHING to make every post go viral—including our collabs! I'd be so excited to get to know your beautiful brand and showcase it in a way my audience will genuinely love.",
+        bio: "I love creating fun content for my audience. I’ve built a beautiful community where I can interact and share my life through posts. I’ve always admired how other influencers showcase brands and loved the idea of building that kind of relationship. Hence, I’d love to learn about your brand and create something special to share with the world.",
         profileImage: "profile.jpg", // Place your profile image in the same directory
         email: "management@seriixo.com",
         socialLinks: {
@@ -16,14 +16,14 @@ const mediaKitConfig = {
             youtube: "https://www.youtube.com/@seriixo/shorts"
         },
         socialFollowers: {
-            tiktok: "165k",
-            youtube: "200k"
+            tiktok: "203.2k",
+            youtube: "241k"
         }
     },
 
     // Main Statistics
     statistics: {
-        followers: "165k",
+        followers: "203.2k",
         engagement: tiktokStats.engagementRate,
         totalPosts: tiktokStats.totalVideos,
         avgLikes: tiktokStats.avgLikes28d,
@@ -51,11 +51,11 @@ const mediaKitConfig = {
     // Geography
     geography: {
         countries: [
-            { name: "AUSTRALIA", value: "12.4%", flagCode: "au" },
+            { name: "AUSTRALIA", value: "7.4%", flagCode: "au" },
             { name: "PHILIPPINES", value: "11.5%", flagCode: "ph" },
-            { name: "UNITED KINGDOM", value: "8.6%", flagCode: "gb" },
+            { name: "UNITED KINGDOM", value: "8.3%", flagCode: "gb" },
             { name: "SOUTH AFRICA", value: "5.6%", flagCode: "za" },
-            { name: "UNITED STATES", value: "4.8%", flagCode: "us" },
+            { name: "UNITED STATES", value: "23.7%", flagCode: "us" },
             { name: "CANADA", value: "4.0%", flagCode: "ca" },
             { name: "NEW ZEALAND", value: "3.3%", flagCode: "nz" },
             { name: "UAE", value: "2.8%", flagCode: "ae" },
