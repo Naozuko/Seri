@@ -51,11 +51,11 @@ const mediaKitConfig = {
     // Geography
     geography: {
         countries: [
-            { name: "AUSTRALIA", value: "7.4%", flagCode: "au" },
+            { name: "UNITED STATES", value: "23.7%", flagCode: "us" },
             { name: "PHILIPPINES", value: "11.5%", flagCode: "ph" },
             { name: "UNITED KINGDOM", value: "8.3%", flagCode: "gb" },
+            { name: "AUSTRALIA", value: "7.4%", flagCode: "au" },
             { name: "SOUTH AFRICA", value: "5.6%", flagCode: "za" },
-            { name: "UNITED STATES", value: "23.7%", flagCode: "us" },
             { name: "CANADA", value: "4.0%", flagCode: "ca" },
             { name: "NEW ZEALAND", value: "3.3%", flagCode: "nz" },
             { name: "UAE", value: "2.8%", flagCode: "ae" },
