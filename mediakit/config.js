@@ -16,14 +16,14 @@ const mediaKitConfig = {
             youtube: "https://www.youtube.com/@seriixo/shorts"
         },
         socialFollowers: {
-            tiktok: "203.2k",
-            youtube: "241k"
+            tiktok: "286.7k",
+            youtube: "296k"
         }
     },
 
     // Main Statistics
     statistics: {
-        followers: "203.2k",
+        followers: "286.7k",
         engagement: tiktokStats.engagementRate,
         totalPosts: tiktokStats.totalVideos,
         avgLikes: tiktokStats.avgLikes28d,
