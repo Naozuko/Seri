@@ -294,6 +294,12 @@ header {
     padding-left: 10px;
 }
 
+/* Also left-align very small bars like 45-54 (6.9%) so text is readable */
+#age-45-54 {
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
 /* Geography */
 .geography {
     margin-bottom: 2rem;
