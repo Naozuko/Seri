@@ -101,6 +101,10 @@ header {
     color: #FF0000;
 }
 
+.instagram i {
+    color: #E4405F;
+}
+
 .total-followers {
     margin-top: 0.5rem;
     margin-bottom: 1rem;

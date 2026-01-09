@@ -8,16 +8,18 @@ const mediaKitConfig = {
     profile: {
         name: "Seri",
         username: "@seriixo",
-        bio: "I love creating fun content for my audience. I’ve built a beautiful community where I can interact and share my life through posts. I’ve always admired how other influencers showcase brands and loved the idea of building that kind of relationship. Hence, I’d love to learn about your brand and create something special to share with the world.",
+        bio: "I love creating fun content and sharing my life on the internet. I've built a beautiful community where I can comfortably share what I love as well as fun challenges. I love to work with brands showcasing amazing products, I pour my heart and soul into every video so you can trust me to make something people want to watch and share.",
         profileImage: "profile.jpg", // Place your profile image in the same directory
         email: "management@seriixo.com",
         socialLinks: {
             tiktok: "https://www.tiktok.com/@seriixo",
-            youtube: "https://www.youtube.com/@seriixo/shorts"
+            youtube: "https://www.youtube.com/@seriixo/shorts",
+            instagram: "#"
         },
         socialFollowers: {
-            tiktok: "286.7k",
-            youtube: "296k"
+            tiktok: "404.5K",
+            youtube: "434k",
+            instagram: "12.2K"
         }
     },
 
@@ -91,34 +93,39 @@ const mediaKitConfig = {
     // Collaboration Rates
     rates: [
         {
-            title: "Cross-platform Posting",
-            description: "(TikTok + YouTube)",
-            price: "$2650 USD"
-        },
-        {
             title: "TikTok Dedicated",
             description: "(30s-120s)",
-            price: "$1945 USD"
+            price: "$2150 USD"
         },
         {
             title: "TikTok Integrated",
             description: "(15s-30s)",
-            price: "$1050 USD"
-        },        
+            price: "$1750 USD"
+        },
         {
             title: "Link in Bio",
-            description: "(7-days)",
-            price: "$520 USD"
+            description: "",
+            price: "$155 USD"
+        },
+        {
+            title: "Cross-platform Posting",
+            description: "(TikTok + Instagram)",
+            price: "$335 USD"
+        },
+        {
+            title: "Cross-platform Posting",
+            description: "(TikTok + YouTube)",
+            price: "$575 USD"
         },
         {
             title: "Usage Rights",
             description: "(1 Month)",
-            price: "$455 USD"
+            price: "$270 USD"
         },
         {
-            title: "Scripted/Dedicated",
+            title: "Scripted",
             description: "",
-            price: "$650 USD"
+            price: "$335 USD"
         }
     ],
 

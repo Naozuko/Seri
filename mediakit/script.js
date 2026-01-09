@@ -72,10 +72,17 @@ document.addEventListener('DOMContentLoaded', function() {
         // Load social links
         document.getElementById('tiktok-link').href = mediaKitConfig.profile.socialLinks.tiktok;
         document.getElementById('youtube-link').href = mediaKitConfig.profile.socialLinks.youtube;
+        if (mediaKitConfig.profile.socialLinks.instagram) {
+            const instagramLink = document.getElementById('instagram-link');
+            if (instagramLink) {
+                instagramLink.href = mediaKitConfig.profile.socialLinks.instagram;
+            }
+        }
         
         // Load social follower counts
         const tiktokFollowerCount = document.querySelector('#tiktok-link .follower-count');
         const youtubeFollowerCount = document.querySelector('#youtube-link .follower-count');
+        const instagramFollowerCount = document.querySelector('#instagram-link .follower-count');
         
         if (tiktokFollowerCount) {
             tiktokFollowerCount.textContent = mediaKitConfig.profile.socialFollowers.tiktok;
@@ -83,6 +90,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (youtubeFollowerCount) {
             youtubeFollowerCount.textContent = mediaKitConfig.profile.socialFollowers.youtube;
+        }
+        
+        if (instagramFollowerCount && mediaKitConfig.profile.socialFollowers.instagram) {
+            instagramFollowerCount.textContent = mediaKitConfig.profile.socialFollowers.instagram;
         }
         
         // Calculate and display total followers
@@ -115,7 +126,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const tiktokTotal = parseAbbrev(mediaKitConfig.profile.socialFollowers.tiktok);
             const youtubeTotal = parseAbbrev(mediaKitConfig.profile.socialFollowers.youtube);
-            const total = tiktokTotal + youtubeTotal;
+            const instagramTotal = parseAbbrev(mediaKitConfig.profile.socialFollowers.instagram || "0");
+            const total = tiktokTotal + youtubeTotal + instagramTotal;
             totalFollowersElement.textContent = formatAbbrev(total);
         }
         
