@@ -104,7 +104,7 @@ const mediaKitConfig = {
         },
         {
             title: "Link in Bio",
-            description: "",
+            description: "(7 days)",
             price: "$155 USD"
         },
         {
