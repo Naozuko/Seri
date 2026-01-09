@@ -128,11 +128,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const youtubeTotal = parseAbbrev(mediaKitConfig.profile.socialFollowers.youtube);
             const instagramTotal = parseAbbrev(mediaKitConfig.profile.socialFollowers.instagram || "0");
             const total = tiktokTotal + youtubeTotal + instagramTotal;
-            totalFollowersElement.textContent = formatAbbrev(total);
+            const formattedTotal = formatAbbrev(total);
+            totalFollowersElement.textContent = formattedTotal;
+            
+            // Also update the followers stat card with the total
+            document.getElementById('followers').textContent = formattedTotal;
         }
         
         // Load statistics
-        document.getElementById('followers').textContent = mediaKitConfig.statistics.followers;
+        // Note: followers is now set above from calculated total
         document.getElementById('engagement').textContent = mediaKitConfig.statistics.engagement;
         document.getElementById('posts').textContent = mediaKitConfig.statistics.totalPosts;
         document.getElementById('likes').textContent = mediaKitConfig.statistics.avgLikes;
