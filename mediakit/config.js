@@ -17,9 +17,9 @@ const mediaKitConfig = {
             instagram: "#"
         },
         socialFollowers: {
-            tiktok: "404.5K",
-            youtube: "434k",
-            instagram: "12.2K"
+            tiktok: "442.1k",
+            youtube: "471k",
+            instagram: "14.2K"
         }
     },
 
@@ -126,6 +126,11 @@ const mediaKitConfig = {
             title: "Scripted",
             description: "",
             price: "$335 USD"
+        },
+        {
+            title: "Spark Code",
+            description: "(7 days)",
+            price: "$320 USD"
         }
     ],
 
