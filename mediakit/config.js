@@ -14,7 +14,7 @@ const mediaKitConfig = {
         socialLinks: {
             tiktok: "https://www.tiktok.com/@seriixo",
             youtube: "https://www.youtube.com/@seriixo/shorts",
-            instagram: "#"
+            instagram: "https://www.instagram.com/seriixo._/"
         },
         socialFollowers: {
             tiktok: "485.3K",
@@ -26,7 +26,7 @@ const mediaKitConfig = {
     // Main Statistics
     statistics: {
         followers: "1.1M",
-        engagement: tiktokStats.engagementRate,
+        engagement: "66.3%",
         totalPosts: tiktokStats.totalVideos,
         avgLikes: tiktokStats.avgLikes28d,
         avgReelViews: tiktokStats.avgViews28d,
