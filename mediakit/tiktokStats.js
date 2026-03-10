@@ -5,7 +5,7 @@
 
 // TikTok Analytics Data
 const tiktokStats = {
-    followers: "286.7k",
+    followers: "485.3K",
     totalVideos: "85",
     totalImpression: "33M",
     totalEngagement: "1,693,000",

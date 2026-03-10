@@ -17,15 +17,15 @@ const mediaKitConfig = {
             instagram: "#"
         },
         socialFollowers: {
-            tiktok: "442.1k",
-            youtube: "471k",
-            instagram: "14.2K"
+            tiktok: "485.3K",
+            youtube: "591K",
+            instagram: "18.1K"
         }
     },
 
     // Main Statistics
     statistics: {
-        followers: "286.7k",
+        followers: "1.1M",
         engagement: tiktokStats.engagementRate,
         totalPosts: tiktokStats.totalVideos,
         avgLikes: tiktokStats.avgLikes28d,
