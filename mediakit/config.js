@@ -17,7 +17,7 @@ const mediaKitConfig = {
             instagram: "https://www.instagram.com/seriixo._/"
         },
         socialFollowers: {
-            tiktok: "506.7",
+            tiktok: "506.7K",
             youtube: "690K",
             instagram: "18.9K"
         }
