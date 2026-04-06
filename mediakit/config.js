@@ -110,12 +110,17 @@ const mediaKitConfig = {
         {
             title: "Cross-platform Posting",
             description: "(TikTok + Instagram)",
-            price: "$335 USD"
+            price: "$435 USD"
         },
         {
             title: "Cross-platform Posting",
             description: "(TikTok + YouTube)",
-            price: "$575 USD"
+            price: "$675 USD"
+        },
+        {
+            title: "Instagram Reel",
+            description: "(60s)",
+            price: "$950 USD"
         },
         {
             title: "Usage Rights",
