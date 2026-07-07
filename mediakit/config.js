@@ -90,8 +90,18 @@ const mediaKitConfig = {
         }
     ],
 
-    // Collaboration Rates
+    // Collaboration Rates (sorted highest to lowest)
     rates: [
+        {
+            title: "Youtube",
+            description: "(~15min)",
+            price: "$65,000 USD"
+        },
+        {
+            title: "Youtube Integrated",
+            description: "(~2 mins)",
+            price: "$22,000 USD"
+        },
         {
             title: "TikTok Dedicated",
             description: "(30s-120s)",
@@ -103,19 +113,9 @@ const mediaKitConfig = {
             price: "$1750 USD"
         },
         {
-            title: "Link in Bio",
-            description: "(7 days)",
-            price: "$155 USD"
-        },
-        {
-            title: "Cross-platform Posting",
-            description: "(TikTok + Instagram)",
-            price: "$750 USD"
-        },
-        {
             title: "Cross-platform Posting",
             description: "(TikTok + YouTube)",
-            price: "USD $3000"
+            price: "$3,000 USD"
         },
         {
             title: "Instagram Reel",
@@ -123,19 +123,9 @@ const mediaKitConfig = {
             price: "$1050 USD"
         },
         {
-            title: "Youtube",
-            description: "(~15min)",
-            price: "USD $65,000"
-        },
-        {
-            title: "Youtube Integrated",
-            description: "(~2 mins)",
-            price: "USD $22,000"
-        },
-        {
-            title: "Usage Rights",
-            description: "(1 Month)",
-            price: "$270 USD"
+            title: "Cross-platform Posting",
+            description: "(TikTok + Instagram)",
+            price: "$750 USD"
         },
         {
             title: "Scripted",
@@ -146,6 +136,16 @@ const mediaKitConfig = {
             title: "Spark Code",
             description: "(7 days)",
             price: "$320 USD"
+        },
+        {
+            title: "Usage Rights",
+            description: "(1 Month)",
+            price: "$270 USD"
+        },
+        {
+            title: "Link in Bio",
+            description: "(7 days)",
+            price: "$155 USD"
         }
     ],
 
