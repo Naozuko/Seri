@@ -17,9 +17,9 @@ const mediaKitConfig = {
             instagram: "https://www.instagram.com/seriixo._/"
         },
         socialFollowers: {
-            tiktok: "575.4K",
-            youtube: "974K",
-            instagram: "20.1K"
+            tiktok: "583.2K",
+            youtube: "1,058,726",
+            instagram: "21.1K"
         }
     },
 
@@ -110,17 +110,27 @@ const mediaKitConfig = {
         {
             title: "Cross-platform Posting",
             description: "(TikTok + Instagram)",
-            price: "$435 USD"
+            price: "$750 USD"
         },
         {
             title: "Cross-platform Posting",
             description: "(TikTok + YouTube)",
-            price: "$675 USD"
+            price: "USD $3000"
         },
         {
             title: "Instagram Reel",
             description: "(60s)",
-            price: "$950 USD"
+            price: "$1050 USD"
+        },
+        {
+            title: "Youtube",
+            description: "(~15min)",
+            price: "USD $65,000"
+        },
+        {
+            title: "Youtube Integrated",
+            description: "(~2 mins)",
+            price: "USD $22,000"
         },
         {
             title: "Usage Rights",
